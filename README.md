@@ -12,4 +12,5 @@
 2. Hash por Cuadrado: Para claves largas, podría usarse hash por plegamiento para considerar múltiples secciones de la clave. Si las claves son cadenas o de naturaleza textual, un método como hashing basado en caracteres ASCII o hashing de suma ponderada podría ser más efectivo.
 
 - Conclusiones
+
 Ambos métodos son útiles para convertir claves complejas en índices hash que permitan acceder eficientemente a una tabla hash. Hash por Plegamiento es ideal para claves largas y distribuye bien los valores al procesar todas las partes de la clave, mientras que el hash por cuadrado es más adecuado para claves cortas, ya que aprovecha los dígitos centrales del cuadrado de la clave para obtener índices con menos patrones repetitivos. La elección del método depende de las características de las claves y de la necesidad de minimizar colisiones. En la práctica, combinar estos métodos con técnicas como encadenamiento o direccionamiento abierto mejora aún más su rendimiento.
